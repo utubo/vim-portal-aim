@@ -20,8 +20,9 @@ function! portalaim#Aim(color = '') abort
   echoh Normal
   redraw
 
-  let s:readonly = &readonly
   let s:cursor = getpos('.')
+  let s:readonly = &readonly
+  setl readonly
   au portalaim CursorMoved * ++once :call <SID>shoot()
   nnoremap <script> <silent> <CR> :<C-u>call <SID>shoot()<CR>
   nnoremap <script> <silent> <ESC> :<C-u>call <SID>cancel()<CR>
@@ -30,6 +31,7 @@ endfunction
 function! s:shoot() abort
   redraw
   echo ''
+  let &l:readonly = s:readonly
   let l:cur = getpos('.')
   let l:cur[0] = bufnr()
   call portal#shoot(s:color, l:cur)
