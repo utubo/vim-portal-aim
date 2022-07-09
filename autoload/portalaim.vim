@@ -29,9 +29,7 @@ function! portalaim#Aim(color = '') abort
 endfunction
 
 function! s:shoot() abort
-  redraw
-  echo ''
-  let &l:readonly = s:readonly
+  call s:clear()
   let l:cur = getpos('.')
   let l:cur[0] = bufnr()
   call portal#shoot(s:color, l:cur)
@@ -39,6 +37,10 @@ function! s:shoot() abort
 endfunction
 
 function! s:cancel() abort
+  call s:clear()
+endfunction
+
+function! s:clear() abort
   redraw
   echo ''
   let &l:readonly = s:readonly
