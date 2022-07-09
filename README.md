@@ -18,10 +18,10 @@ nnoremap <Leader>a PortalAim<CR>
 
 # Usage
 ```vim
-PortalReady blue
-PortalReady orange
+PortalAim blue
+PortalAim orange
 " Switch blue <-> orange automatically
-PortalReady
+PortalAim
 ```
 
 and move the cursor.
