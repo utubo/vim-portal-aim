@@ -1,6 +1,7 @@
 # vim-portal-aim
-
 Shoot the vim-portal
+
+![vim-portal-aim](https://user-images.githubusercontent.com/6848636/178097460-70f1d553-2105-4893-8754-b139a242f60c.gif)
 
 # Install
 ```vim
