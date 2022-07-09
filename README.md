@@ -5,8 +5,8 @@ Shoot the vim-portal
 
 # Install
 ```vim
-call dein#install('thinca/vim-portal')
-call dein#install('utubo/vim-portal-aim')
+call dein#add('thinca/vim-portal')
+call dein#add('utubo/vim-portal-aim')
 " Recommended
 call dein#add('easymotion/vim-easymotion')
 
