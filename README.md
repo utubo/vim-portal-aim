@@ -10,7 +10,7 @@ call dein#install('utubo/vim-portal-aim')
 " Recommended
 call dein#add('easymotion/vim-easymotion')
 
-nnoremap <Leader>pr PortalAim<CR>
+nnoremap <Leader>a PortalAim<CR>
 ```
 
 # Require
