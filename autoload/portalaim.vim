@@ -29,6 +29,7 @@ endfunction
 
 function! s:shoot() abort
   redraw
+  echo ''
   let l:cur = getpos('.')
   let l:cur[0] = bufnr()
   call portal#shoot(s:color, l:cur)
