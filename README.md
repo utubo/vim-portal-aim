@@ -25,5 +25,8 @@ PortalReady
 
 and move the cursor.
 
-The portal will put instead of move the cursor.
+The portal will be set up instead of move the cursor.
 
+# LICENSE
+Author : utubo
+License: zlib License
