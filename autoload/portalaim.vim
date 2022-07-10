@@ -29,11 +29,11 @@ function! portalaim#Aim(color = '') abort
 endfunction
 
 function! s:shoot() abort
-  call s:clear()
   let l:cur = getpos('.')
   let l:cur[0] = bufnr()
   call portal#shoot(s:color, l:cur)
   call setpos('.', s:cursor)
+  call s:clear()
 endfunction
 
 function! s:cancel() abort
