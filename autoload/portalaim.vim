@@ -22,7 +22,7 @@ function! portalaim#Aim(color = '') abort
 
   let s:cursor = getpos('.')
   let s:readonly = &readonly
-  setl readonly
+  set readonly
   au portalaim CursorMoved * ++once :call <SID>shoot()
   nnoremap <script> <silent> <CR> :<C-u>call <SID>shoot()<CR>
   nnoremap <script> <silent> <ESC> :<C-u>call <SID>cancel()<CR>
@@ -43,7 +43,7 @@ endfunction
 function! s:clear() abort
   redraw
   echo ''
-  let &l:readonly = s:readonly
+  let &readonly = s:readonly
   au! portalaim
   silent! nunmap <script> <CR>
   silent! nunmap <script> <ESC>
