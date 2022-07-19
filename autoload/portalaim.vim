@@ -1,3 +1,6 @@
+let s:save_cpo = &cpo
+set cpo&vim
+
 let s:color = ''
 
 augroup portalaim
@@ -49,3 +52,4 @@ function! s:clear() abort
   silent! nunmap <script> <ESC>
 endfunction
 
+let &cpo = s:save_cpo
